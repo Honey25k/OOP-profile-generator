@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "name": "oop-profile-generator",
+  "description": "Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Honey25k/OOP-profile-generator.git"
+  },
+  "author": "Honey Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Honey25k/OOP-profile-generator/issues"
+  },
+  "homepage": "https://github.com/Honey25k/OOP-profile-generator#readme"
 }
