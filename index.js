@@ -126,7 +126,7 @@ const myTeamMembers = async () => { // look through this end squerly bracket { }
     };
 
     async function finalQuestions() {
-        await questions();
+        await myTeamMembers();
       
         const addQuestions = await inquirer.prompt([
           {
@@ -136,7 +136,7 @@ const myTeamMembers = async () => { // look through this end squerly bracket { }
             choices: ['Yes. Add new member', 'No. Team is complete'],
           },
         ]);
-        
+
         if (addQuestions.addMember === 'Yes. Add new member') {
           return finalQuestions();
       
