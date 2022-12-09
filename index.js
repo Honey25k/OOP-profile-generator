@@ -1,15 +1,16 @@
+
 const inquirer = require("inquirer");
 const fs = require("fs");
 
 const TemplateHtml = require("./src/TemplateHtml");
-
+// get paths for objects 
 const engineer = require("./lib/Engineer");
 const intern = require("./lib/Intern");
 const manager = require("./lib/Manager");
 
 const addNewPersonData = [];
-
-const myTeamMembers = async () => { // look through this end squerly bracket { }
+// questions for employee data
+const myTeamMembers = async () => {
     const answers = await inquirer.prompt([
         
         {
@@ -124,7 +125,7 @@ const myTeamMembers = async () => { // look through this end squerly bracket { }
            addNewPersonData.push(addIntern);
         }
     };
-
+    // when user answers all questions, ask if user wants to add another member 
     async function finalQuestions() {
         await myTeamMembers();
       
@@ -136,7 +137,7 @@ const myTeamMembers = async () => { // look through this end squerly bracket { }
             choices: ['Yes. Add new member', 'No. Team is complete'],
           },
         ]);
-
+         // if user wants to add another member, return questions  
         if (addQuestions.addMember === 'Yes. Add new member') {
           return finalQuestions();
       
@@ -145,7 +146,7 @@ const myTeamMembers = async () => { // look through this end squerly bracket { }
         };
       };
       finalQuestions();
-      
+      // will complete index.html file in dist folder. 
       function teamComplete () {
         console.log("New Team: ", addNewPersonData);
         fs.writeFileSync('./dist/index.html', TemplateHtml(addNewPersonData), "utf-8") 
