@@ -26,7 +26,7 @@
   Simply answer all the prompted questions. Once completed, a new index.html file will be generated in the dist folder.
   
   ## [Walkthrough](#table-of-contents)
-  Walkthrough video: 
+  Walkthrough video: https://drive.google.com/file/d/110U-QJoR7gnWWmvl1co6AKjSvGREh_wJ/view 
 
   ## [License](#table-of-contents)
   None
