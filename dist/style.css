@@ -1,0 +1,41 @@
+body {
+  background-color: #fcfcfc;
+}
+
+.myTeam { 
+    background-color: rgb(230, 52, 191); 
+    color: #020208;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  .team-cards {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .employee-card {
+    margin: 1em;
+    width: 100%;
+    min-height: 22rem;
+    background-color: #d05dda;
+    color: rgb(26, 13, 13);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    border: none;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f6f7f8;
+  }
+  
+  .list-group-item {
+    color: #000000;
+    text-decoration: none;
+  }
